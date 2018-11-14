@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
 import Display from "./components/Display";
-import News from "./components/News";
+// import News from "./components/News";
 // import axios from "axios";
 
 import "./App.css";
@@ -22,7 +22,6 @@ class App extends Component {
         <Header symbol={this.state.symbol} setSymbol={this.setSymbol} />
         <div className="container">
           <Display symbol={this.state.symbol} />
-          <News />
         </div>
       </div>
     );

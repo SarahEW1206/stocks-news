@@ -6,25 +6,31 @@ export default class Display extends Component {
     stock: "",
     color: "",
     openColor: "",
-    openLabel: "Open:"
+    openLabel: "Open:",
+    news: ""
   };
 
-  async getPrice() {
+  getData() {
     const { symbol } = this.props;
-    try {
-      const res = await axios.get(
-        `https://api.iextrading.com/1.0/stock/${symbol}/batch?types=quote`
+    const { companyName } = this.state.stock;
+    axios
+      .get(`https://api.iextrading.com/1.0/stock/${symbol}/batch?types=quote`)
+      .then(res => {
+        this.setState({ stock: res.data.quote, openLabel: "Open:" });
+        return axios.get(
+          `https://newsapi.org/v2/everything?q=${companyName}&apiKey=233e1387d9d94f85bfcdb577165f851a`
+        );
+      })
+      .then(res => this.setState({ news: res.data.articles }))
+      .catch(() =>
+        this.setState({
+          stock: {
+            symbol: `Sorry no results found for ${symbol}!`
+          },
+          news: "",
+          openLabel: ""
+        })
       );
-      this.setState({ stock: res.data.quote });
-    } catch (error) {
-      console.log(error);
-      this.setState({
-        stock: {
-          symbol: `Sorry no results found for ${symbol}!`
-        },
-        openLabel: ""
-      });
-    }
 
     if (this.state.stock.latestPrice > this.state.stock.open) {
       this.setState({ color: "green", openColor: "red" });
@@ -40,7 +46,7 @@ export default class Display extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.getPrice(), 1000);
+    this.interval = setInterval(() => this.getData(), 1000);
   }
 
   render() {
@@ -64,6 +70,15 @@ export default class Display extends Component {
             <span className="text-primary">{this.state.openLabel}</span>
             {this.state.stock.open}
           </p>
+        </div>
+        <div>
+          {this.state.news && (
+            <div>
+              {this.state.news.map(story => {
+                return <h2>{story.title}</h2>;
+              })}
+            </div>
+          )}
         </div>
       </div>
     );
