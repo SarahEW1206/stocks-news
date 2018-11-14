@@ -2,17 +2,16 @@ import React, { Component } from "react";
 
 export default class Selector extends Component {
   state = {
-    selected: "",
     entered: ""
   };
 
   render() {
-    const { setSymbol } = this.props;
+    const { getData } = this.props;
     return (
       <form
         onSubmit={e => {
           e.preventDefault();
-          setSymbol(this.state.entered.toLowerCase());
+          getData(this.state.entered.toLowerCase());
           this.setState({
             entered: ""
           });
@@ -38,7 +37,7 @@ export default class Selector extends Component {
             type="button"
             onClick={e => {
               e.preventDefault();
-              setSymbol(this.state.entered.toLowerCase());
+              getData(this.state.entered.toLowerCase());
               this.setState({
                 entered: ""
               });

@@ -8,3 +8,16 @@
     justify-content: flex-start;
   }
 }
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group.mb-3 {
+  margin-top: 30px;
+}
+
+.story-image {
+  width: 30%;
+}
