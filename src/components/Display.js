@@ -12,7 +12,7 @@ export default class Display extends Component {
   };
 
   componentDidMount() {
-    this.setState({ stock: { companyName: "Enter a Ticker Symbol Above" } });
+    this.setState({ stock: { name: "Enter a Ticker Symbol Above" } });
   }
 
   getData(symbol) {
@@ -50,8 +50,6 @@ export default class Display extends Component {
           news: ""
         })
       );
-
-    console.log("here we go");
   }
 
   render() {
