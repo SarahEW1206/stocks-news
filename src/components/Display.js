@@ -76,6 +76,16 @@ export default class Display extends Component {
               {this.state.stock.price_open}
             </p>
           </div>
+          <p className="text-center" style={{ fontSize: "12px" }}>
+            Market data provided by{" "}
+            <a
+              target="_blank"
+              href="https://www.worldtradingdata.com/documentation#introduction"
+            >
+              World Trading Data
+            </a>
+            .
+          </p>
         </div>
 
         {this.state.news && (
