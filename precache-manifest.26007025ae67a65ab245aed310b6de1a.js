@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "10b4514d6221743c8aa2",
+    "revision": "3c6441f293172b33162e",
     "url": "/stocks-news/static/css/main.7ce089a5.chunk.css"
   },
   {
-    "revision": "10b4514d6221743c8aa2",
-    "url": "/stocks-news/static/js/main.10b4514d.chunk.js"
+    "revision": "3c6441f293172b33162e",
+    "url": "/stocks-news/static/js/main.3c6441f2.chunk.js"
   },
   {
     "revision": "560fe75340b091b0f769",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/stocks-news/static/js/runtime~main.96539d9e.js"
   },
   {
-    "revision": "b8378af134e5e569cf8dd470f8838cd3",
+    "revision": "9f9213abcdf1566d67b10b2a12b8a45e",
     "url": "/stocks-news/index.html"
   }
 ];
