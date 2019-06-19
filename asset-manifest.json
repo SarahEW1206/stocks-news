@@ -1,7 +1,7 @@
 {
   "main.css": "/stocks-news/static/css/main.7ce089a5.chunk.css",
-  "main.js": "/stocks-news/static/js/main.e72e81c1.chunk.js",
-  "main.js.map": "/stocks-news/static/js/main.e72e81c1.chunk.js.map",
+  "main.js": "/stocks-news/static/js/main.3533a3f1.chunk.js",
+  "main.js.map": "/stocks-news/static/js/main.3533a3f1.chunk.js.map",
   "static/css/1.61c561b6.chunk.css": "/stocks-news/static/css/1.61c561b6.chunk.css",
   "static/js/1.560fe753.chunk.js": "/stocks-news/static/js/1.560fe753.chunk.js",
   "static/js/1.560fe753.chunk.js.map": "/stocks-news/static/js/1.560fe753.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.7ce089a5.chunk.css.map": "/stocks-news/static/css/main.7ce089a5.chunk.css.map",
   "static/css/1.61c561b6.chunk.css.map": "/stocks-news/static/css/1.61c561b6.chunk.css.map",
   "index.html": "/stocks-news/index.html",
-  "precache-manifest.2088c157e783419d6d3e2d38dc194aac.js": "/stocks-news/precache-manifest.2088c157e783419d6d3e2d38dc194aac.js",
+  "precache-manifest.96aa541f2f4f359cd96486ac3ef975bf.js": "/stocks-news/precache-manifest.96aa541f2f4f359cd96486ac3ef975bf.js",
   "service-worker.js": "/stocks-news/service-worker.js"
 }
