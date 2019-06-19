@@ -21,7 +21,7 @@ export default class Display extends Component {
         `https://api.worldtradingdata.com/api/v1/stock?symbol=${symbol}&api_token=uO7WwIJwLtXBWj1Jt3iRAFGfXVxHTKVCcsvoMRfQVtMbOJ79X2AZ74zUM5Wf`
       )
       .then(res => {
-        this.setState({ stock: res.data, openLabel: "Open:" });
+        this.setState({ stock: res.data.data[0], openLabel: "Open:" });
         return axios.get(
           `https://newsapi.org/v2/everything?q=${
             this.state.stock.name
