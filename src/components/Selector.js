@@ -20,8 +20,8 @@ export default class Selector extends Component {
         <div className="input-group mb-3">
           <input
             className="form-control"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
+            aria-label="stock-symbol"
+            aria-describedby="enter-stock-symbol"
             type="text"
             placeholder="Enter a Symbol"
             value={this.state.entered}
