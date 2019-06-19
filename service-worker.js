@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/stocks-news/precache-manifest.50cd60c8a8c9e3bafa37655b68d9c4ae.js"
+  "/stocks-news/precache-manifest.8fe50d6ceb26418e84df8b0e1e0f84e5.js"
 );
 
 workbox.clientsClaim();
